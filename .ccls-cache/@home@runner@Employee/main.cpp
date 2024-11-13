@@ -1,21 +1,17 @@
 #include <iostream>
-#include "EmployeeClass.h"
+#include "ProductionWorker.h"
 
 int main() {
-    // This creates an EmployeeClass object
-    EmployeeClass emp1("John Doe", 12345, "March 15, 2015");
+    // This creates ProductionWorker objects
+    ProductionWorker worker1("Paul Jones", 12345, "10/28/2024", 1, 20.25);
+    ProductionWorker worker2("Harriet Smith", 54321, "6/15/2024", 2, 25.50);
 
-    // This displays employee details using the print function
-    cout << "Employee Information:" << endl;
-    emp1.print();
-  
-    // This changes the employee details using the mutator functions
-    emp1.setName("Jane Smith");
-    emp1.setEmployeeNumber(67890);
-    emp1.setHireDate("January 20, 2018");
+    // This displays information for both workers
+    cout << "Production Worker 1 Information:" << endl;
+    worker1.print();
 
-    cout << "\nUpdated Employee Information:" << endl;
-    emp1.print();
+    cout << "\nProduction Worker 2 Information:" << endl;
+    worker2.print();
 
     return 0;
 }
