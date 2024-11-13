@@ -2,14 +2,13 @@
 #include <iostream>
 using namespace std;
 
-// Constructor to initialize employee details
+// This is the constructor that initializes employee details
 EmployeeClass::EmployeeClass(string empName, int empNumber, string empHireDate) {
     name = empName;
     EmployeeNumber = empNumber;
     hireDate = empHireDate;
 }
 
-// Accessor functions
 string EmployeeClass::getName() const {
     return name;
 }
@@ -22,7 +21,6 @@ string EmployeeClass::getHireDate() const {
     return hireDate;
 }
 
-// Mutator functions
 void EmployeeClass::setName(string empName) {
     name = empName;
 }
@@ -35,7 +33,7 @@ void EmployeeClass::setHireDate(string empHireDate) {
     hireDate = empHireDate;
 }
 
-// Print function to display employee details
+// Thisis a print function to display employee details
 void EmployeeClass::print() const {
     cout << "Employee Name: " << name << endl;
     cout << "Employee ID: " << EmployeeNumber << endl;
